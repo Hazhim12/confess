@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Untukmu Dhea</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "lEcZI7PVcG-3naBE_",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Untukmu Dhea</h1>
+      <img src="012_091058.jpg" width="400" height="300" alt="Gambar untukmu" />
+      <p>Halo,Dhea Amanda Putri</p>
+      <p>
+        Ada sesuatu yang ingin aku ungkapkan selama ini. Sebelumnya aku mau
+        minta maaf kalo misalkan desain web ini masih kurang, soalnya masih
+        belajar hehehe. Dan aku tau kamu pasti gk suka kalo aku nembak nya lewat
+        chat makanya aku buat website aja biar keliatan mainstream.
+      </p>
+      <p>Klik tombol di bawah ini untuk melihat pesanku:</p>
+      <button onclick="showMessage()" id="showMessage">Lihat Pesan</button>
+      <div class="message" id="message">
+        <p>
+          Aku sebenarnya udah ada perasaan sama dhea tuh semenjak pas awal
+          kenal, tapi aku awalnya gak tau apa sebenarnya perasaan ini karena aku
+          masih bingung and also kan masih sama yang mantan yang GG itu. Mungkin
+          dhea mikir kalo itu tuh gak bener tapi jujur aku ngerasa hal yang
+          berbeda dari yang aku rasain sebelumnya.
+        </p>
+        <p>
+          It's like falling love in first sight but at the wrong moment, ya
+          pokoknya gitulah, apa yang bikin aku suka sama kamu?, kamu orangnya
+          caring banget and also pretty :3, dan masih banyak lagi mau disebut
+          satu-satu tapi agak malu.
+        </p>
+        <p>
+          Inti dari pesan ini adalah bukti rasa suka aku ke dhea, aku harap dhea
+          juga ngerasa hal yang sama
+        </p>
+        <textarea
+          id="reply"
+          rows="4"
+          cols="50"
+          placeholder="Tulis jawabanmu disini ya"
+        ></textarea
+        ><br />
+        <button onclick="submitResponse()">Kirim Balasan</button>
+      </div>
+      <div id="response" class="hidden">
+        <h2>Terima kasih telah membalas!</h2>
+        <p id="userResponse"></p>
+      </div>
+    </div>
+    <audio autoplay loop>
+      <source src="enchanted.mp3" type="audio/mp3" />
+      <!-- Browser Anda tidak mendukung pemutar audio. -->
+    </audio>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
