@@ -10,8 +10,8 @@ function submitResponse() {
   const replyMessage = document.getElementById("reply").value;
   emailjs
     .send("service_e6gabkp", "template_o48frbr", {
-      to_name: "hazhim",
-      from_name: "dhea",
+      to_name: "Hazhim",
+      from_name: "Dhea",
       subject: "Confess Complete",
       message: replyMessage,
     })
